@@ -72,7 +72,7 @@ def home():
 def coffee_consumed():
     model = pickle.load(open('model.pickle', 'rb'))
     Day_No. = request.args.get('Day_No.')
-    Sugar_Cubes. = request.args.get('Sugar_Cubes')
+    Sugar_Cubes = request.args.get('Sugar_Cubes')
     Creamer_amount = request.args.get('Creamer_amount')
     
     test_df = pd.Dataframe({'Day_No.':[Day_No.], 'Sugar_Cubes':[Sugar_Cubes], 'Creamer_Amount':[Creamer_amount]})
